@@ -15,12 +15,13 @@ from scipy.ndimage.filters import gaussian_filter
 from scipy.ndimage.filters import convolve
 
 SCALE = True
-TEXTURE = True
+TEXTURE = False #True
 
 
 
 folder_data = './data/'
-file_data = 'lizard_bathy.tif'
+#file_data = 'lizard_bathy.tif'
+file_data = 'ccmr_south_2015_09_22_bathy_12345_pair6_30m_10M_alut_unc.tif'
 gtif = gdal.Open(os.path.join(folder_data, file_data))
 
 try:
